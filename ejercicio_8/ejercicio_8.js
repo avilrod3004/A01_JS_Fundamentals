@@ -2,6 +2,7 @@ let age = prompt("¿Cuál es tu edad?");
 
 
 if (!isNaN(age)) {
+    age = Number(age);
     if (age < 18) {
         alert("Es menor de edad")
     } else {
