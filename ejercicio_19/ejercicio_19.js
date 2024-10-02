@@ -1,7 +1,7 @@
 function validarNumero(numero) {
     let valido = false;
 
-    if (!Number.isNaN(Number(numero))) {
+    if (Number.isInteger(Number(numero))) {
         valido = true;
     }
 
