@@ -1,10 +1,10 @@
 let esNumero = false;
 
 do {
-    let entrada = Number(prompt("Introduce un número: "));
+    let entrada = prompt("Introduce un número: ");
 
     console.log(entrada);
-    if (!isNaN(entrada)) {
+    if (Number.isNaN(Number(entrada))) {
         esNumero = true;
     } else {
         alert("ERROR - El valor introducido no es un número.")
